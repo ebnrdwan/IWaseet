@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+    <ash.wasset.views.MyTextViewBold
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="@dimen/s22"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:layout_margin="@dimen/d5"/>
+
+    <ash.wasset.views.MyTextView
+        android:id="@+id/detailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="@dimen/d20"
+        android:textColor="@color/blue"
+        android:layout_margin="@dimen/d10"/>
+
+    <ash.wasset.views.MyTextView
+        android:id="@+id/priceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="110"
+        android:textSize="@dimen/s26"
+        android:gravity="end"
+        android:textColor="@color/blue"
+        android:layout_margin="@dimen/d10"/>
+
+</LinearLayout>

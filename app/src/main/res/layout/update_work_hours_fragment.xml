@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lieghtBlue" >
+
+        <ash.wasset.views.MyTextView
+            android:id="@+id/dayNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAT"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/s20"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/d5"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ash.wasset.views.MyTextViewBold
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/d10"
+            android:textSize="@dimen/s18" />
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/fromTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/d10"
+            android:textSize="@dimen/s18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ash.wasset.views.MyTextViewBold
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/d10"
+            android:textSize="@dimen/s18" />
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/toTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/d10"
+            android:textSize="@dimen/s18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ash.wasset.views.MyTextViewBold
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/off"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/d10"
+            android:textSize="@dimen/s18" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/offCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            android:layout_weight="2"
+            android:layout_margin="@dimen/d10"
+            android:textSize="@dimen/s18" />
+
+    </LinearLayout>
+
+    <ash.wasset.views.MyButton
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:text="@string/update"
+        android:textSize="@dimen/s20"
+        android:layout_margin="@dimen/d20"/>
+
+
+</LinearLayout>

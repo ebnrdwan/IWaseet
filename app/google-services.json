@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "644447970972",
+    "firebase_url": "https://maneedz-2c9ef.firebaseio.com",
+    "project_id": "maneedz-2c9ef",
+    "storage_bucket": "maneedz-2c9ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644447970972:android:c874f830ae0c26b9",
+        "android_client_info": {
+          "package_name": "ash.wasset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644447970972-dkgc2a858f6ev1f0dtdad3cdqfjm6pal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsuEciAJcB2OvJ2l2hA32l7IhAMtDV3v0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

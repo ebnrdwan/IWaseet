@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ash.wasset.activities.RegisterOneActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/main_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"/>
+
+    <ash.wasset.views.MyTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/registration"
+        android:textSize="@dimen/s26"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        android:layout_above="@+id/registrationLayout"
+        android:layout_margin="@dimen/d10"/>
+
+    <ImageView
+        android:id="@+id/langImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/registrationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp"
+        android:weightSum="1.0"
+        android:layout_centerInParent="true">
+    <LinearLayout
+        android:id="@+id/srly"
+        android:layout_width="0dip"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ash.wasset.views.MyButton
+            android:id="@+id/serviceProviderRegistrationButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:textSize="@dimen/s16"
+            android:textColor="@color/white"
+            android:background="@mipmap/provider_icon"/>
+         <ash.wasset.views.MyTextViewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+             android:text="@string/service_provider"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="@dimen/s20"
+        android:textColor="@color/gray"
+        android:layout_margin="@dimen/d5"/>
+      </LinearLayout>
+    <LinearLayout
+        android:id="@+id/crly"
+        android:layout_width="0dip"
+        android:layout_weight=".5"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ash.wasset.views.MyButton
+            android:id="@+id/clientRegistrationButton"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:textColor="@color/blue"
+            android:background="@mipmap/customer_icon"
+            android:textSize="@dimen/s20"/>
+        <ash.wasset.views.MyTextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/client"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/s20"
+            android:textColor="@color/gray"
+            android:layout_margin="@dimen/d5"/>
+</LinearLayout>
+    </LinearLayout>
+
+    <ash.wasset.views.MyButton
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:text="@string/login"
+        android:textSize="@dimen/s20"
+        android:layout_above="@+id/skipButton"/>
+
+    <ash.wasset.views.MyButton
+        android:id="@+id/skipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginBottom="@dimen/d20"
+        android:layout_marginTop="@dimen/d20"
+        android:textColor="@color/white"
+        android:text="@string/skip"
+        android:textSize="@dimen/s20"/>
+
+</RelativeLayout>

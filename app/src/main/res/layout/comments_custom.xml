@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/d5"
+    android:paddingTop="@dimen/d5"
+    android:rotationY="180">
+
+    <ash.wasset.views.CircleImageView
+        android:id="@+id/userImageView"
+        android:layout_width="@dimen/d50"
+        android:layout_height="@dimen/d50"
+        android:src="@color/blue"
+        android:layout_margin="@dimen/d10"
+        android:layout_centerVertical="true"
+        android:rotationY="180"
+        app:civ_border_color="@color/blue"
+        app:civ_border_width="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:rotationY="180" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/talk_icon"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="@dimen/d10"
+            android:layout_marginStart="@dimen/d10"
+            android:padding="@dimen/d5"
+            android:layout_marginTop="@dimen/d10">
+
+            <ash.wasset.views.MyTextViewBold
+                android:id="@+id/userNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/s14"
+                android:textStyle="bold"
+                android:text="Ahmed Shafeek"
+                android:singleLine="true" />
+
+            <ash.wasset.views.MyTextView
+                android:id="@+id/commentTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/s16"
+                android:textStyle="normal"
+                android:text="Message" />
+
+        </LinearLayout>
+
+        <ash.wasset.views.MyTextView
+            android:id="@+id/timeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/s12"
+            android:textStyle="normal"
+            android:text="11/11/2016 12:00 AM"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/d10"/>
+
+    </LinearLayout>
+
+</LinearLayout>

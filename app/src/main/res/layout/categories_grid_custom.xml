@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/categories_border">
+
+    <ash.wasset.views.RoundedImageView
+        android:id="@+id/categoryImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_margin="@dimen/d5"
+        app:riv_corner_radius="@dimen/d10" />
+
+    <ash.wasset.views.MyTextViewBold
+        android:id="@+id/categoryNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ahmed"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:background="@drawable/text_black_transparent_background"
+        android:singleLine="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="1dp"/>
+
+</RelativeLayout>

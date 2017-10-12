@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_registration_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ash.wasset.activities.ClientRegistrationActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@mipmap/register_icon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/gray2"
+                android:orientation="horizontal">
+
+                <ash.wasset.views.MyEditText
+                    android:id="@+id/clientNameEditText"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="start"
+                    android:hint="@string/nameRequired"
+                    android:inputType="text"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/s18" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/clientNameEditText"
+                    android:gravity="start"
+                    android:src="@drawable/name" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/gray2"
+                android:orientation="horizontal">
+
+                <ash.wasset.views.MyEditText
+                    android:id="@+id/clientMobileEditText"
+                    android:layout_width="@dimen/_180sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="start"
+                    android:hint="@string/mobileRequired"
+                    android:inputType="number"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/_16sdp" />
+
+                <ash.wasset.views.MyTextView
+                    android:id="@+id/country_code"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_toStartOf="@id/clientMobileEditText"
+                    android:gravity="center"
+                    android:text="+966"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/_16sdp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/country_code"
+                    android:gravity="start"
+                    android:src="@drawable/phone" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/gray2"
+
+                android:orientation="horizontal">
+
+                <ash.wasset.views.MyEditText
+                    android:id="@+id/clientEmailEditText"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="start"
+                    android:hint="@string/emailRequired"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/s18" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/clientEmailEditText"
+                    android:gravity="start"
+                    android:src="@drawable/mail" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/photoLayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/d25"
+                    android:layout_height="@dimen/d25"
+                    android:layout_margin="@dimen/d5"
+                    android:background="@color/lieghtBlue"
+                    android:src="@drawable/ic_person" />
+
+                <ash.wasset.views.MyTextView
+                    android:id="@+id/imageNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/photo"
+                    android:textColor="@color/lieghtBlue" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/d10"
+                android:layout_marginLeft="@dimen/d5"
+                android:layout_marginRight="@dimen/d5"
+                android:background="@color/gray"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/gray2"
+                android:orientation="horizontal">
+
+                <ash.wasset.views.MyEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="start"
+                    android:hint="@string/passwordRequired"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/s18" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/passwordEditText"
+                    android:gravity="start"
+                    android:src="@drawable/password" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@color/gray2"
+                android:orientation="horizontal">
+
+                <ash.wasset.views.MyEditText
+                    android:id="@+id/reTypePasswordEditText"
+                    android:layout_width="@dimen/_220sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="start"
+                    android:hint="@string/reTypePasswordRequired"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_4sdp"
+                    android:textColor="@color/gray"
+                    android:textColorHint="@color/gray"
+                    android:textSize="@dimen/s18" />
+
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_alignParentStart="true"
+                    android:layout_toStartOf="@id/reTypePasswordEditText"
+                    android:gravity="start"
+                    android:src="@drawable/password" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_80sdp"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ash.wasset.views.MyButton
+                        android:id="@+id/registrationButton"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:background="@mipmap/register_continue"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/s20" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp"
+                        android:gravity="center"
+                        android:text="@string/contin" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/news_icon" />
+
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/new_user"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/_20sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

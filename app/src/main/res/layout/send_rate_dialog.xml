@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border_blue_solid"
+    android:gravity="center">
+
+    <RatingBar
+        android:id="@+id/serviceProviderRatingBar"
+        android:rating="2.5"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d30"/>
+
+    <ash.wasset.views.MyButton
+        android:id="@+id/sendButton"
+        android:layout_width="@dimen/d300"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/d10"
+        android:src="@drawable/go_icon"
+        android:background="@color/lieghtBlue"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="@string/send"
+        android:textSize="@dimen/s20"/>
+
+</LinearLayout>

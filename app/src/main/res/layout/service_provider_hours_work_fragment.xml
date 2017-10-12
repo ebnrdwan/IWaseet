@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lieghtBlue" >
+
+        <ash.wasset.views.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/workingHours"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/s20"
+            android:textColor="@color/white"
+            android:layout_margin="@dimen/d5"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_below="@+id/titleLayout"
+        android:paddingTop="@dimen/d5"
+        android:paddingBottom="@dimen/d5"
+        android:background="@color/blue">
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/dayNameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/day"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s16"
+            android:layout_margin="2dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/fromTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/from"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s16"
+            android:layout_margin="2dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/toTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/to"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s16"
+            android:layout_margin="2dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/dayOffTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/daysOff"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s16"
+            android:layout_margin="2dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/workingHoursListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerLayout"
+        android:dividerHeight="0dp"
+        android:divider="@color/transparent"
+        android:background="@color/white" />
+
+    <ash.wasset.views.MyTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:text="@string/noResultFound"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/s28"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/workingHoursListView"/>
+
+</RelativeLayout>

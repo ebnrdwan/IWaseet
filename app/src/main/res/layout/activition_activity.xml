@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_registration_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34358A"
+    tools:context="ash.wasset.activities.ClientRegistrationActivity">
+
+    <ImageView
+        android:layout_width="@dimen/d100"
+        android:layout_height="@dimen/d100"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/logo"
+        android:layout_marginTop="@dimen/d20"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lnrCodeResend"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginTop="@dimen/d20"
+        android:layout_centerInParent="true">
+
+        <ash.wasset.views.MyEditText
+            android:id="@+id/comfirmationCodeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirmationCodeRequired"
+            android:gravity="center"
+            android:textColorHint="@color/lieghtBlue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s18"
+            android:inputType="number"
+            android:layout_marginBottom="@dimen/d10" />
+
+
+
+
+        <ash.wasset.views.MyButton
+            android:id="@+id/resendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/confirm_resend"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/s12"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d10"
+            android:layout_marginBottom="@dimen/d10"
+            android:minHeight="0dp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/lnrCodeResend"
+        android:layout_height="wrap_content">
+
+        <ash.wasset.views.MyButton
+            android:id="@+id/checkButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:background="@mipmap/confirm_ok"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s20"
+            android:layout_marginTop="@dimen/d30"/>
+
+        <ash.wasset.views.MyButton
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@mipmap/confrim_cancel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/s20"
+            android:layout_marginTop="@dimen/d30"/>
+    </LinearLayout>
+
+</RelativeLayout>

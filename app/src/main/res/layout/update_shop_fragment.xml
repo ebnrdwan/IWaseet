@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_registration_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ash.wasset.activities.ClientRegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+
+
+        <ash.wasset.views.MyTextView
+            android:id="@+id/categoryNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/updateProfile"
+            android:gravity="center"
+            android:textSize="@dimen/s20"
+            android:textColor="@color/blue"
+            android:layout_margin="@dimen/d5"/>
+
+        <ash.wasset.views.RoundedImageView
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:src="@mipmap/profile_icon"
+            android:layout_weight="4.45" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_marginTop="@dimen/d40">
+
+
+            <ash.wasset.views.MyEditText
+                android:id="@+id/nameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nameRequired"
+                android:gravity="center"
+                android:textColorHint="@color/lieghtBlue"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/s18"
+                android:inputType="text"
+
+                android:layout_marginBottom="@dimen/d10" />
+
+
+
+            <ash.wasset.views.MyEditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details"
+                android:gravity="center"
+                android:textColorHint="@color/lieghtBlue"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/s18"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="@dimen/d10" />
+
+
+            <ash.wasset.views.MyEditText
+                android:id="@+id/detailsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/details"
+                android:gravity="center"
+                android:textColorHint="@color/lieghtBlue"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/s18"
+                android:inputType="text"
+                android:layout_marginBottom="@dimen/d10" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="@dimen/d40">
+    <ash.wasset.views.MyButton
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@mipmap/profile_ok"
+        android:textSize="@dimen/s20"/>
+
+    <ash.wasset.views.MyButton
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@mipmap/profile_cancel"
+        android:textSize="@dimen/s20"/>
+</LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

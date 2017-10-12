@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IWaseet</string>
+    <string name="client">عميل</string>
+    <string name="service_provider">مزود خدمة</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="update">تحديث</string>
+    <string name="registration">التسجيل</string>
+    <string name="nameRequired">* الأسم</string>
+    <string name="locationRequired">* الموقع</string>
+    <string name="shopNameRequired">* أسم المحل</string>
+    <string name="mobileRequired">* الهاتف</string>
+    <string name="emailRequired">* الاميل</string>
+    <string name="photo">الصورة</string>
+    <string name="confirmationCodeRequired">* كود التفعيل</string>
+    <string name="passwordRequired">* كلمة المرور</string>
+    <string name="newPasswordRequired">* كلمة المرور الجديدة</string>
+    <string name="oldPasswordRequired">* كلة المرور القديمة</string>
+    <string name="reTypePasswordRequired">* أعد كلمة المرور</string>
+    <string name="forgotPassword">نسيت كلمة المرور؟</string>
+    <string name="nameErrorMsg">الأسم لا يقل عن 4 حروف</string>
+    <string name="mobileErrorMsg">الهاتف لا يقل عن 9 أرقام</string>
+    <string name="emailErrorMsg">خطأ في البريد الالكتروني</string>
+    <string name="passwordErrorMsg">كلمة المرور لا تقل عن 6 حروف أو أرقام</string>
+    <string name="passwordNotMatched">كلمة المرور غير متشابهة</string>
+    <string name="loading">جاري التحميل...</string>
+    <string name="invalidUser">مستخدم غير صحيح</string>
+    <string name="invalidActivationCode">خطأ في كود التفعيل</string>
+    <string name="search">بحث</string>
+    <string name="connectionError">حدث خطأ في الأتصال</string>
+    <string name="km">كم</string>
+    <string name="m">م</string>
+    <string name="location">الموقع</string>
+    <string name="distance">المسافة</string>
+    <string name="call">اتصال</string>
+    <string name="calls">الاتصالات</string>
+    <string name="rate">التقييم</string>
+    <string name="reviews">التعليقات</string>
+    <string name="complain">الشكوي</string>
+    <string name="workingHours">ساعات العمل</string>
+    <string name="request">طلب</string>
+    <string name="requests">طلبات</string>
+    <string name="addAComplain">اضافة المشكلة</string>
+    <string name="priceList">قائمة الاسعار</string>
+    <string name="updateCategories">تحديث الاقسام</string>
+    <string name="categories">الأقسام</string>
+    <string name="noCommentsAvailable">لا يوجد تعليقات متاحة</string>
+    <string name="noRequestsAvailable">لا يوجد طلبات متاحة</string>
+    <string name="noResultFound">لا يوجد نتائج متاحة</string>
+    <string name="send">ارسال</string>
+    <string name="requestSent">تم ارسال الطلب</string>
+    <string name="complainSent">تم ارسال المشكلة</string>
+    <string name="rs">ريال</string>
+    <string name="notAllowToCall">غير مسموح بلاتصال</string>
+    <string name="answered">تم الرد</string>
+    <string name="notAnswered">لم يرد</string>
+    <string name="busy">مشغول</string>
+    <string name="rateSent">تم التقيم</string>
+    <string name="updateProfile"> الملف الشخصي</string>
+    <string name="changePassword">تغير كلمة المرور</string>
+    <string name="updateHoursWork">تحديث ساعات العمل</string>
+    <string name="camera">الكاميرا</string>
+    <string name="gallary">الصور</string>
+    <string name="on">متاح</string>
+    <string name="off">مغلق</string>
+    <string name="day">يوم</string>
+    <string name="from">من</string>
+    <string name="to">الي</string>
+    <string name="daysOff">يوم العطلة</string>
+    <string name="shareApp">نشر التطبيق</string>
+    <string name="signOut">تسجيل الخروج</string>
+    <string name="shareVia">نشر في</string>
+    <string name="news">الاخبار</string>
+    <string name="byDistance">بالمسافة</string>
+    <string name="byRate">بالتقيم</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="language">اللغة</string>
+
+    <string name="socialMedia">التواصل الاجتماعي</string>
+    <string name="skip">تخطي</string>
+    <string name="url">الرابط</string>
+    <string name="add">اضافه</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="deleteMessage">هل تريد حذف هذا؟</string>
+    <string name="new_user">تسجيل</string>
+    <string name="contin">استمرار</string>
+
+
+
+
+</resources>

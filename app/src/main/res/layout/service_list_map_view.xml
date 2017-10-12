@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="@dimen/d300"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/border_blue_solid"
+    android:padding="@dimen/d10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeImageView"
+            android:layout_width="@dimen/d30"
+            android:layout_height="@dimen/d30"
+            android:src="@drawable/close_icon"
+            android:layout_margin="@dimen/d5"
+            android:tint="@color/blue"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/serviceListImageView"
+        android:layout_width="@dimen/d150"
+        android:layout_height="@dimen/d150"
+        android:layout_margin="@dimen/d5"
+        android:src="@mipmap/logo"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/serviceNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmed Shop"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/s18"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/d5"
+            android:singleLine="true"
+            android:gravity="center"/>
+
+        <ash.wasset.views.MyTextView
+            android:id="@+id/distanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance 3 KM"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/s16"
+            android:layout_margin="@dimen/d5"
+            android:background="@drawable/border_blue"
+            android:padding="@dimen/d5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/callImageView"
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:src="@mipmap/search_icon"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/d5" />
+
+            <ImageView
+                android:id="@+id/locationImageView"
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:src="@mipmap/search_icon"
+                android:layout_margin="@dimen/d5"
+                android:layout_toLeftOf="@+id/callImageView" />
+
+            <ImageView
+                android:id="@+id/moreImageView"
+                android:layout_width="@dimen/d40"
+                android:layout_height="@dimen/d40"
+                android:src="@mipmap/search_icon"
+                android:layout_margin="@dimen/d5"
+                android:layout_toLeftOf="@+id/callImageView" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

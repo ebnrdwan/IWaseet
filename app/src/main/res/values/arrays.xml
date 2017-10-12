@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="days">
+        <item>SAT</item>
+        <item>SUN</item>
+        <item>MON</item>
+        <item>TUS</item>
+        <item>WED</item>
+        <item>THR</item>
+        <item>FRI</item>
+    </array>
+
+</resources>

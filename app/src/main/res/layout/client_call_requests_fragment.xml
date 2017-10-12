@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/requestsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/d10"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp" />
+
+    <ash.wasset.views.MyTextViewBold
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:text="@string/noRequestsAvailable"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/s28"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+</LinearLayout>

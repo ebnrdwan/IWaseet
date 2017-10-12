@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_background">
+
+    <ash.wasset.views.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/deleteMessage"
+        android:textColor="@color/blue"
+        android:layout_margin="5dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="5dp" >
+
+        <ash.wasset.views.MyButton
+            android:id="@+id/yesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:layout_margin="2dp" />
+
+        <ash.wasset.views.MyButton
+            android:id="@+id/noButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:layout_margin="2dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

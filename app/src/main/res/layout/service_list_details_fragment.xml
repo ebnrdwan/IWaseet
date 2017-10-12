@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lieghtBlue" >
+
+            <ash.wasset.views.MyTextView
+                android:id="@+id/categoryNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ahmed Shafeek"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textSize="@dimen/s20"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/d5"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/blue"
+            android:layout_marginTop="@dimen/d20"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d20"
+            android:padding="@dimen/d20">
+
+            <ImageView
+                android:id="@+id/serviceProviderImageView"
+                android:layout_width="@dimen/d120"
+                android:layout_height="@dimen/d120"
+                android:src="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/border_blue"
+            android:layout_marginLeft="@dimen/d20"
+            android:layout_marginRight="@dimen/d20"
+            android:padding="@dimen/d20" >
+
+            <ash.wasset.views.MyTextViewBold
+                android:id="@+id/serviceProviderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Shafeek Shop"
+                android:textSize="@dimen/s28"
+                android:textColor="@color/blue" />
+
+            <RatingBar
+                android:id="@+id/serviceProviderRatingBar"
+                android:rating="3"
+                android:stepSize="0.5"
+                android:numStars="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"/>
+
+            <ash.wasset.views.MyTextView
+                android:id="@+id/serviceProviderDetailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:text="Shafeek Shop Details Shafeek Shop Details Shafeek Shop Details Shafeek Shop Details"
+                android:textSize="@dimen/s22"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/d20">
+
+            <LinearLayout
+                android:id="@+id/callLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/call_circle_icon"
+                    android:tint="@color/blue" />
+
+                <ash.wasset.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/complainLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/complain_circle_icon"
+                    android:tint="@color/blue" />
+
+                <ash.wasset.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/complain"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sendRequestLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/complain_circle_icon"
+                    android:tint="@color/blue" />
+
+                <ash.wasset.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/request"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_margin="2dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/d20" >
+
+            <LinearLayout
+                android:id="@+id/reviewsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/reviews_circle_icon"
+                    android:tint="@color/blue" />
+
+                <ash.wasset.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reviews"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rateLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/rate_icon"
+                    android:tint="@color/blue"/>
+
+                <ash.wasset.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rate"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workingHoursLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/hours_icon"
+                    android:tint="@color/blue"/>
+
+                <ash.wasset.views.MyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/workingHours"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:layout_margin="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/socialMediaListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

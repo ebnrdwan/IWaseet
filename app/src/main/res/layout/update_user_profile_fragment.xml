@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_registration_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="ash.wasset.activities.ClientRegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/white" >
+
+        <ImageView
+            android:layout_width="@dimen/d100"
+            android:layout_height="@dimen/d100"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/profile_icon"
+            android:layout_marginTop="@dimen/d20"/>
+
+        <ash.wasset.views.MyTextView
+            android:id="@+id/categoryNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/updateProfile"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textSize="@dimen/s20"
+            android:textColor="@color/blue"
+            android:layout_margin="@dimen/d5"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/d30"
+            android:layout_marginRight="@dimen/d30"
+            android:layout_marginTop="@dimen/d40">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/clientNameEditText"
+        android:gravity="start"
+        android:src="@drawable/name" />
+
+            <ash.wasset.views.MyEditText
+                android:id="@+id/clientNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:hint="@string/nameRequired"
+                android:gravity="start"
+                android:textColorHint="@color/lieghtBlue"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/s18"
+                android:inputType="text"/>
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/clientEmailEditText"
+                android:gravity="start"
+                android:src="@drawable/mail" />
+
+            <ash.wasset.views.MyEditText
+                android:id="@+id/emialmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:hint="@string/emailRequired"
+                android:gravity="start"
+                android:textColorHint="@color/lieghtBlue"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/s18"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="@dimen/d10" />
+           </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray"
+            android:orientation="horizontal">
+            <ash.wasset.views.MyEditText
+                android:id="@+id/locationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/location"
+                android:gravity="start"
+                android:textColorHint="@color/lieghtBlue"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/s18"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="@dimen/d10" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/d30"
+                android:layout_marginRight="@dimen/d30"
+                android:layout_marginTop="@dimen/d10">
+                <ash.wasset.views.MyButton
+                    android:id="@+id/okButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@mipmap/confirm_ok"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s20"
+                    android:layout_marginTop="@dimen/d30"/>
+
+                <ash.wasset.views.MyButton
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@mipmap/confrim_cancel"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s20"
+                    android:layout_marginTop="@dimen/d30"/>
+            </LinearLayout>
+        </LinearLayout >
+    </ScrollView>
+
+</LinearLayout>

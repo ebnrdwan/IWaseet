@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_vertical"
+    android:background="@drawable/border_blue_solid"
+    android:layout_marginTop="@dimen/d10">
+
+    <ImageView
+        android:id="@+id/clientImageView"
+        android:layout_width="@dimen/d80"
+        android:layout_height="@dimen/d80"
+        android:layout_margin="@dimen/d5"
+        android:src="@mipmap/logo"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ash.wasset.views.MyTextViewBold
+            android:id="@+id/clientNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmed Shop"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/s18"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/d5"
+            android:singleLine="true"
+            android:gravity="start" />
+
+        <ash.wasset.views.MyTextView
+            android:id="@+id/requestDetailsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahmed Shop"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/s16"
+            android:layout_margin="@dimen/d5"
+            android:singleLine="true"
+            android:gravity="start"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="@dimen/d30"
+                android:layout_height="@dimen/d30"
+                android:layout_margin="@dimen/d5"
+                android:src="@mipmap/location_circle_icon"
+                android:scaleType="centerCrop"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <ash.wasset.views.MyTextView
+            android:id="@+id/requestDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1-2-2010"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/s10"
+            android:layout_margin="@dimen/d5"
+            android:singleLine="true"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+</LinearLayout>

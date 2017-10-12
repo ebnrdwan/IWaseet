@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/client_registration_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ash.wasset.activities.ClientRegistrationActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:src="@mipmap/login_icon" />
+
+    <ash.wasset.views.MyTextView
+        android:id="@+id/loginlable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/_4sdp"
+        android:text="@string/login"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:textColor="@color/gray"
+        android:textColorHint="@color/gray"
+        android:textSize="@dimen/s18" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/d30"
+        android:layout_marginRight="@dimen/d30"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/gray2"
+            android:orientation="horizontal">
+
+            <ash.wasset.views.MyEditText
+                android:id="@+id/mobileEditText"
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="start"
+                android:hint="@string/mobileRequired"
+                android:inputType="number"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/s18" />
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/mobileEditText"
+                android:gravity="start"
+                android:src="@drawable/phone" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/gray2"
+            android:orientation="horizontal">
+
+            <ash.wasset.views.MyEditText
+                android:id="@+id/passwordEditText"
+
+                android:layout_width="@dimen/_220sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="start"
+                android:hint="@string/passwordRequired"
+                android:inputType="textPassword"
+                android:padding="@dimen/_4sdp"
+                android:textColor="@color/gray"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/s18" />
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/passwordEditText"
+                android:gravity="start"
+                android:src="@drawable/password" />
+
+
+        </RelativeLayout>
+
+        <ash.wasset.views.MyButton
+            android:id="@+id/forgotPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/d10"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/transparent"
+            android:gravity="start"
+            android:minHeight="0dp"
+            android:text="@string/forgotPassword"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/s12" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ash.wasset.views.MyButton
+                    android:id="@+id/loginButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+
+                    android:background="@mipmap/login_continue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="@string/contin" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+
+            <LinearLayout
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_alignParentBottom="true"
+
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ash.wasset.views.MyButton
+                    android:id="@+id/skipButton"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+
+                    android:background="@mipmap/login_skip"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/s20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="@string/skip" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/to_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:src="@mipmap/login_newuser" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:text="@string/new_user"
+            android:textColor="@color/gray2"
+            android:textSize="@dimen/_20sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
